@@ -12,9 +12,7 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
   height: 5rem;
   position: fixed;
   top: 0;
@@ -22,6 +20,7 @@ header {
   right: 0;
   z-index: 999;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, .25);
+  background-color: #1E1E1E;
 }
 
 header ul {
@@ -33,7 +32,12 @@ header ul {
 header a {
   text-decoration: none;
   color: #FCFFFC;
+}
 
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 header nav a {
@@ -52,7 +56,7 @@ header .logo {
   font-weight: 900;
 }
 
-header ,section, footer {
+nav ,section, footer {
   max-width: 390px;
   margin: 0 auto;
   /* background-color: #333d471a; */
@@ -100,8 +104,12 @@ footer {
 
 p {
   font-weight: 500;
-font-size: 16px;
-line-height: 140%;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.about-text {
+  margin-top: 1rem;
 }
 
 a {
@@ -110,16 +118,16 @@ a {
 }
 
 .name {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 500;
-  line-height: 36px;
+  margin-bottom: .25rem;
 }
 
 .profession {
   font-size: 16px;
   font-weight: 300;
   line-height: 19px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.1em;
   color: #FFFFFF80;
 }
 
